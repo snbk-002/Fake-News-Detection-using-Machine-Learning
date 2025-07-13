@@ -9,8 +9,8 @@ This project is a final-year academic implementation that aims to detect fake ne
 ---
 
 ### CSV Files:
-##### True dataset [https://drive.google.com/file/d/1Malp2q0r_-kAw0-JQiplM2GXfkBLJY8m/view?usp=sharing]
-##### Fake dataset [https://drive.google.com/file/d/16x5vFwvZP_RxsVjFxo9AXNbCpkxs8GFZ/view?usp=sharing]
+##### True dataset[https://drive.google.com/file/d/1Malp2q0r_-kAw0-JQiplM2GXfkBLJY8m/view?usp=sharing]
+##### Fake dataset[https://drive.google.com/file/d/16x5vFwvZP_RxsVjFxo9AXNbCpkxs8GFZ/view?usp=sharing]
 
 
 ## 🔍 Introduction
