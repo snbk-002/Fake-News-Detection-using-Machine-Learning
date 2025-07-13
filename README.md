@@ -10,20 +10,6 @@ Here’s a complete README.md for your GitHub repository based on the fake news 
 
 This project is a final-year academic implementation that aims to detect fake news articles by combining traditional Machine Learning algorithms with modern AI models like Gemini API and Large Language Models (LLMs). It also features a Flask-based web application for real-time inference and user interaction.
 
----
-
-## 📌 Table of Contents
-
-- [Introduction](#introduction)
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [System Architecture](#system-architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Model Overview](#model-overview)
-- [Results](#results)
-- [Future Work](#future-work)
-- [Contributors](#contributors)
 
 ---
 
@@ -61,7 +47,7 @@ The goal is to automatically classify whether a given news article is real or fa
 
 ## 🧠 System Architecture
 
-`plaintext
+
               +----------------------+
               |  Real-time News API |
               +----------+-----------+
@@ -87,24 +73,18 @@ The goal is to automatically classify whether a given news article is real or fa
 
 💻 Installation
 
-1. Clone the repository
-
-git clone https://github.com/your-username/fake-news-detector.git
-cd fake-news-detector
-
-
-2. Create and activate virtual environment
+1. Create and activate virtual environment
 
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 
 
-3. Install dependencies
+2. Install dependencies
 
 pip install -r requirements.txt
 
 
-4. Run the Flask App
+3. Run the Flask App
 
 python app.py
 
