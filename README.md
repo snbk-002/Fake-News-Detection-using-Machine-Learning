@@ -1,7 +1,6 @@
 # Fake-News-Detection-using-Machine-Learning
 
 
-Here’s a complete README.md for your GitHub repository based on the fake news detection project described in your PDF:
 
 
 ---
