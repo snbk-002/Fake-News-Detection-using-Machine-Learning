@@ -1,0 +1,111 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake News Detector</title>
+</head>
+<body>
+    <h2>Fake News Detector</h2>
+    <form method="post">
+        <textarea name="news" rows="6" cols="60" placeholder="Paste your news article here..."></textarea><br>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if result %}
+    <h3>Results:</h3>
+    <p><strong>Local ML Model:</strong> {{ result.local_model }}</p>
+    <p><strong>Gemini LLM:</strong> {{ result.gemini_model }}</p>
+    {% endif %}
+</body>
+</html> 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px 30px;
+            width: 500px;
+            text-align: center;
+        }
+        h2 {
+            color: #333333;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            resize: none;
+            font-size: 14px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .results {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .results h3 {
+            color: #007bff;
+        }
+        .results p {
+            font-size: 14px;
+            color: #333333;
+        }
+        .refresh-btn {
+            background-color: #dc3545;
+            margin-top: 10px;
+        }
+        .refresh-btn:hover {
+            background-color: #a71d2a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Fake News Detector</h2>
+        <form method="post">
+            <textarea name="news" rows="6" placeholder="Paste your news article here..."></textarea><br>
+            <button type="submit">Analyze</button>
+        </form>
+        <form method="post" action="/refresh">
+            <button type="submit" class="refresh-btn">Refresh Chat History</button>
+        </form>
+
+        {% if result %}
+        <div class="results">
+            <h3>Results:</h3>
+            <p><strong>Local ML Model:</strong> {{ result.local_model }}</p>
+            <p><strong>Gemini LLM:</strong> {{ result.gemini_model }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
